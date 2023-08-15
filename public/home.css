@@ -1,0 +1,141 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  
+}
+h1{
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bolder;
+  font-size: 3em;
+    color: rgb(156, 14, 14);
+    font-family: "Raleway", sans-serif;
+   
+}
+form{
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.input-box{
+  margin: 5px;
+}
+input{
+  padding: 5px;
+}
+label{
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: #720101;
+}
+input {
+  padding: 22px 8px 18px 8px;;
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid #5e6877
+}
+form button{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background-color: rgb(12, 162, 12);
+  color: wheat;
+} 
+button:hover{
+  background-color: #720101;
+}
+
+.post-card {
+  
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid rgb(105, 34, 34);
+    border-radius: 5px;
+    padding: 2rem;
+    width: 30%;
+    margin: 10px;
+    background-image: url("post\ bg\ img\ 2.jpg") ; /* Replace with your image path */
+  background-size: cover; /* Make the background image cover the entire card */
+   color: white; 
+  }
+  .post-card h3{
+    font-size: 1.5em;
+    color: red;
+    z-index: -1;
+  opacity: 0.8;
+  background-color: #373737;
+    margin-bottom: 12px;
+    padding: 5px;
+    border-radius: 5px
+  }
+ .post-card p{
+  margin-bottom: 10px;
+  padding: 11px;
+  border-radius: 5px;
+  background-color: #373737;
+  z-index: -1;
+  opacity: 0.89;
+}
+ 
+ .post-card button{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+ 
+ }
+ .dltpost {
+    background-color: rgb(197, 2, 2);
+    color: white;
+ }
+ .editpost {
+    background-color: rgb(14, 160, 75);
+    color: white;
+ }
+
+
+
+  .result{
+    align-items: center;
+  }
+  .posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+/* Add this to your <style> section or home.css */
+.custom-popup {
+  max-width: 300px; /* Adjust the max width as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Center the success icon (tick mark) */
+.swal2-icon.swal2-success {
+  margin: 0 auto;
+  display: block;
+}
+.edit-form {
+  margin-bottom: 2px;
+  margin-top: 30px;
+}
+.edit-form 
+.edit-form button{
+  margin: 2px;
+}
+
+.edit-input{
+  padding: 9px;
+  margin: 2px;
+}

@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Noto Sans", sans-serif;
+}
+body {
+  /* background: linear-gradient(to bottom, #ddd6f3, #faaca8); */
+  min-height: 100vh;
+}
+header {
+  background-color: black;
+  /* background-color: rgb(161, 6, 6); */
+  padding: 0.7em 0 0.7em 0;
+}
+header p {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-spacing: 0.3em;
+  letter-spacing: 0.05em;
+}
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  overflow-x: hidden;
+}
+#signupApp {
+  gap: 1.7em;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #c02222;
+  font-size: 2.6em;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.lineAfterh1 {
+  color: #99979c;
+}
+.formContainer {
+  box-shadow: 6px 18px 38px wheat;
+}
+
+.formContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+/* .box {
+  width: 100%;
+  padding: 0.6em;
+  font-size: 1.2rem;
+  outline: none;
+  border: 2px solid rgb(121, 119, 119);
+  border-radius: 6px;
+  margin-bottom: 0.7em;
+} */
+.inputBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5e6877;
+  margin-bottom: 28px;
+}
+.inputBoxSignup {
+  margin-bottom: 15px;
+}
+.inputBox input {
+  width: 100%;
+  padding: 15px 10px 10px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2em;
+  color: black;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  top: -5px;
+  left: 24px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #c02222;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.85em;
+  padding: 1px 8px;
+  letter-spacing: 0.05em;
+  background: white;
+  /* background: rgba(133, 133, 255, 0.685); */
+}
+.icon {
+  /* position: absolute;
+  left: 4px;
+  top: 0.4em; */
+  font-size: 1.6rem;
+  margin: 0px 0.5em;
+  color: rgb(75, 213, 255);
+}
+.btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.8em 13.5em;
+  margin-top: 2em;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #c02222;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+.btn:hover {
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.247);
+}
+#signupBtn {
+  margin-top: 1em;
+}
+.bottomLine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomLine a {
+  text-decoration: none;
+  color: #5200c6;
+}
+@media screen and (max-width: 594px) {
+  header p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  header {
+    margin-bottom: 6em;
+  }
+  .formContainer {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .formContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  label {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  header p {
+    font-size: 1.5rem;
+  }
+}
